@@ -33,4 +33,10 @@ function highlightItems(){
     })
 }
 
+document.getElementById("dateButton").addEventListener("click" , displayDate);
+
+function displayDate(){
+    document.getElementById("demo").innerHTML = Date();
+}
+
 
