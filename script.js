@@ -18,11 +18,8 @@ let NAME;
 
     document.getElementById("mySubmit").onclick = function(){
     NAME = document.getElementById('myText').value;
-    
-    if(NAME.value === ""){
-        alert("Please fill in your name.");
-        return false;
-    }
+
+   
     document.getElementById("myH1").textContent = `Hello ${NAME}`
 }
 
