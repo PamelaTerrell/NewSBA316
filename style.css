@@ -12,3 +12,23 @@ img {
     color:aliceblue;
     padding: 10px;
 }
+
+#cars {
+    background-color: aquamarine;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#car {
+    background-color: burlywood;
+    text-align:center;
+    padding: 25px;
+    font-size: 24px;
+    width: 50%;
+}
+
+#year {
+    background-color: burlywood;
+    padding: 25px;
+    font-size: 20px;
+}
