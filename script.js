@@ -21,6 +21,8 @@ let NAME;
 
    
     document.getElementById("myH1").textContent = `Well Hello, ${NAME}`
+
+    event.preventDefault()
 }
 
 
