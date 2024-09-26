@@ -20,7 +20,7 @@ let NAME;
     NAME = document.getElementById('myText').value;
 
    
-    document.getElementById("myH1").textContent = `Hello ${NAME}`
+    document.getElementById("myH1").textContent = `Well Hello, ${NAME}`
 }
 
 
