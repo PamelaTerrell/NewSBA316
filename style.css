@@ -2,6 +2,10 @@ html {
     background-color: bisque;
 }
 
+#greeting {
+    color: black;
+}
+
 img {
     height: 400px;
     width: 400px;

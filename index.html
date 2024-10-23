@@ -8,65 +8,32 @@
     <title>ALL ABOUT YOU</title>
 </head>
 <body>
+  <h1>All About You</h1>
 
-    <h1 id = "myH1">GREETINGS</h1>
-    What is your name?<br><br>
-    <label>NAME: </label>
+  <h2>Submit Your Name</h2>
+  <input type="text" id="nameInput" placeholder="Enter your name" />
+  <button onclick="greetUser()">Submit</button>
+  <p id="greeting"></p>
 
-    <form>
-    <input type = "text" id = "myText" placeholder="your name" required>
+  <h2>Highlight Paragraphs</h2>
+  <button onclick="highlightItems()">Highlight Items</button>
+  <p>This is a paragraph to highlight.</p>
+  <p>This is another paragraph to highlight.</p>
 
-    <button id = "mySubmit">submit</button>
+  <h2>Display Date</h2>
+  <button id="dateButton">Show Current Date</button>
+  <p id="demo"></p>
 
-    
+  <h2>Check Generation</h2>
+  <input type="number" id="yearInput" placeholder="Enter your birth year" />
+  <button id="myYear">Check Generation</button>
+  <p id="generationMessage"></p>
 
-    </form>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ullam accusantium ratione magni consectetur repudiandae repellendus ipsum temporibus cupiditate at commodi quod reiciendis nobis, minima, molestiae eaque assumenda ad rerum.</p><br><br>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ullam accusantium ratione magni consectetur repudiandae repellendus ipsum temporibus cupiditate at commodi quod reiciendis nobis, minima, molestiae eaque assumenda ad rerum.</p><br><br>
-
-    <button onclick = "highlightItems()">Highlight all Paragraphs</button><br><br>
-
-    <button id="dateButton">DISPLAY TODAY'S DATE</button><br><br><br>
-
-    <p id = "demo"></p>
-
-
-    <form id = "year">
-
-      <label>What year were you born?</label>
-      <input type = "number" id = "myYear" placeholder="Year of birth" required>
-  
-      <button id = "yearSubmit">submit</button><br><br>
-  
-      
-  
-      </form>
-
-   
-    <ul id = "myList">
-      <li>Baby Boomers = 1946 - 1964</li><br>
-      <li>Generation X = 1965 - 1979</li><br>
-      <li>Millenials = 1980 - 1994</li><br>
-      <li>Generation Z = 1995 - 2012</li><br>
-
-      </ul>
-
-      
-      
-
-
-
-    
-<br><br><br><br>
-
-  <img src = "universe.jpg"/>
-
-    
-
-
-    
-    
+  <h2>List Generations</h2>
+  <ul id="myList">
+      <li>Generation X = 1965 - 1980</li>
+      <li>Generation Y (Millennials) = 1981 - 1996</li>
+      <li>Generation Z = 1997 - 2012</li>
+  </ul>
 </body>
 </html>

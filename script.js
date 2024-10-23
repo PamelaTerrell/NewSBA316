@@ -1,43 +1,44 @@
-
-
-let NAME;
-
-    document.getElementById("mySubmit").onclick = function(){
-    NAME = document.getElementById('myText').value;
-
-   
-    document.getElementById("myH1").textContent = `Hello ${NAME}`
-
+function greetUser() {
+    const name = document.getElementById('nameInput').value;
+    const greetingMessage = `Hello, ${name}! Welcome!`;
+    document.getElementById('greeting').innerText = greetingMessage;
 }
 
-
-
-function highlightItems(){
+function highlightItems() {
     const selectedElements = document.querySelectorAll("p");
-
     selectedElements.forEach((element) => {
         element.style.backgroundColor = "yellow";
-    })
+    });
 }
 
-document.getElementById("dateButton").addEventListener("click" , displayDate);
-
-function displayDate(){
-    document.getElementById("demo").innerHTML = Date();
+function displayDate() {
+    document.getElementById("demo").innerHTML = new Date();
 }
 
-document.getElementById("myYear").addEventListener("click , displayGen");
+function displayGen() {
+    const myYear = parseInt(document.getElementById("yearInput").value, 10);
+    let message = "";
 
-function displayGen(myYear){
-    if (myYear > 1945 && < 1964);
-        "You are a Baby Boomer!"
+    if (myYear > 1945 && myYear < 1964) {
+        message = "You are a Baby Boomer!";
+    } else {
+        message = "You are not a Baby Boomer!";
+    }
+
+    document.getElementById("generationMessage").innerText = message;
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("dateButton").addEventListener("click", displayDate);
+    document.getElementById("myYear").addEventListener("click", displayGen);
+});
 
+function addListItem() {
+    const myList = document.getElementById('myList');
+    let newListItem = document.createElement('li');
+    newListItem.textContent = "Generation Alpha = 2013 - 2025";
+    myList.appendChild(newListItem);
+}
 
-const myList = document.getElementById('myList');
+window.onload = addListItem; 
 
-let newListItem = document.createElement('li');
-newListItem.textContent = "Generation Alpha = 2013 - 2025";
-
-myList.appendChild(newListItem);
